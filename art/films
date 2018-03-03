@@ -1,0 +1,56 @@
+[
+  {
+    "title": "El Castillo Ambulante",
+    "image": "https://github.com/gscdev/miyazaki/art/castillo_ambulante.png",
+    "year": "2004",
+    "duration": "119",
+    "direccion": "Hayao Miyazaki",
+    "guion": "Hayao Miyazaki (Novela: Diana Wynne Jones)",
+    "description": "Sophie es una joven sobre la que pesa una horrible maldición que le confiere el aspecto de una anciana. Sophie decide pedir ayuda al mago Howl, que vive en un castillo ambulante, pero tal vez sea Howl quien necesite la ayuda de Sophie."
+  },
+  {
+    "title": "El Viaje de Chihiro",
+    "image": "https://github.com/gscdev/miyazaki/art/el_viaje_de_chihiro.jpg",
+    "year": "2001",
+    "duration": "124",
+    "direccion": "Hayao Miyazaki",
+    "guion": "Hayao Miyazaki",
+    "description": "Chihiro es una niña de diez años que viaja en coche con sus padres. Después de atravesar un túnel, llegan a un mundo fantástico, en el que no hay lugar para los seres humanos, sólo para los dioses de primera y segunda clase. Cuando descubre que sus padres han sido convertidos en cerdos, Chihiro se siente muy sola y asustada."
+  },
+  {
+    "title": "La Princesa Mononoke",
+    "image": "https://github.com/gscdev/miyazaki/art/la_princesa_mononoke.jpg",
+    "year": "1997",
+    "duration": "133",
+    "direccion": "Hayao Miyazaki",
+    "guion": "Hayao Miyazaki",
+    "description": "Con el fin de curar la herida que le ha causado un jabalí enloquecido, el joven Ashitaka sale en busca del dios Ciervo, pues sólo él puede liberarlo del sortilegio. A lo largo de su periplo descubre cómo los animales del bosque luchan contra hombres que están dispuestos a destruir la Naturaleza."
+  },
+  {
+    "title": "Mi Vecino Totoro",
+    "image": "https://github.com/gscdev/miyazaki/art/mi_vecino_totoro.jpg",
+    "year": "1988",
+    "duration": "86",
+    "direccion": "Hayao Miyazaki",
+    "guion": "Hayao Miyazaki",
+    "description": "En los años 50, una familia japonesa se traslada al campo. Las dos hijas, Satsuki y Mei, entablan amistad con Totoro, un espíritu del bosque. El padre es un profesor universitario que estimula la imaginación de sus hijas relatándoles fábulas e historias mágicas sobre duendes, fantasmas y espíritus protectores de los hogares, mientras la madre se encuentra enferma en el hospital."
+  },
+  {
+    "title": "Ponyo en el acantilado",
+    "image": "https://github.com/gscdev/miyazaki/art/ponyo.jpg",
+    "year": "2008",
+    "duration": "100",
+    "direccion": "Hayao Miyazaki",
+    "guion": "Hayao Miyazaki",
+    "description": "La historia se centra en Sosuke, un chico de 5 años, y su relación con una princesa pez que ansía convertirse en un ser humano. Libre adaptación de \"La sirenita\" que obtuvo muy buena acogida de la crítica en el Festival de Venecia 2008."
+  },
+  {
+    "title": "Porco Rosso",
+    "image": "https://github.com/gscdev/miyazaki/art/porco_rosso.jpg",
+    "year": "1992",
+    "duration": "94",
+    "direccion": "Hayao Miyazaki",
+    "guion": "Hayao Miyazaki",
+    "description": "Periodo de entreguerras. Porco es un cerdo aviador que frustra todos los actos de piratería perpetrados por los piratas aéreos del Adriático. Éstos, decididos a acabar con el valiente y hábil aviador, se ponen de acuerdo para contratar a un aventurero americano cuya misión será eliminarlo."
+  }
+]
