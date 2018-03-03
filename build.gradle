@@ -24,6 +24,7 @@ allprojects {
 
 ext {
     supportVersion = '27.1.0'
+    butterknifeVersion = '8.8.1'
 }
 
 task clean(type: Delete) {
