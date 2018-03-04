@@ -1,7 +1,7 @@
 [
   {
     "title": "El Castillo Ambulante",
-    "image": "https://github.com/gscdev/miyazaki/art/castillo_ambulante.png",
+    "image": "castillo_ambulante.png",
     "year": "2004",
     "duration": "119",
     "direccion": "Hayao Miyazaki",
@@ -10,7 +10,7 @@
   },
   {
     "title": "El Viaje de Chihiro",
-    "image": "https://github.com/gscdev/miyazaki/art/el_viaje_de_chihiro.jpg",
+    "image": "el_viaje_de_chihiro.jpg",
     "year": "2001",
     "duration": "124",
     "direccion": "Hayao Miyazaki",
@@ -19,7 +19,7 @@
   },
   {
     "title": "La Princesa Mononoke",
-    "image": "https://github.com/gscdev/miyazaki/art/la_princesa_mononoke.jpg",
+    "image": "la_princesa_mononoke.jpg",
     "year": "1997",
     "duration": "133",
     "direccion": "Hayao Miyazaki",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Mi Vecino Totoro",
-    "image": "https://github.com/gscdev/miyazaki/art/mi_vecino_totoro.jpg",
+    "image": "mi_vecino_totoro.jpg",
     "year": "1988",
     "duration": "86",
     "direccion": "Hayao Miyazaki",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Ponyo en el acantilado",
-    "image": "https://github.com/gscdev/miyazaki/art/ponyo.jpg",
+    "image": "ponyo.jpg",
     "year": "2008",
     "duration": "100",
     "direccion": "Hayao Miyazaki",
@@ -46,7 +46,7 @@
   },
   {
     "title": "Porco Rosso",
-    "image": "https://github.com/gscdev/miyazaki/art/porco_rosso.jpg",
+    "image": "porco_rosso.jpg",
     "year": "1992",
     "duration": "94",
     "direccion": "Hayao Miyazaki",
