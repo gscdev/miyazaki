@@ -4,16 +4,19 @@ public class Film {
 
     private String title;
     private String year;
-    private int duration;
-    private String music;
+    private String duration;
+    private String director;
+    private String writer;
     private String description;
     private String image;
 
-    public Film(String title, String year, int duration, String music, String description, String image) {
+    public Film(String title, String year, String duration, String director, String writer,
+                String description, String image) {
         this.title = title;
         this.year = year;
         this.duration = duration;
-        this.music = music;
+        this.director = director;
+        this.writer = writer;
         this.description = description;
         this.image = image;
     }
@@ -23,48 +26,28 @@ public class Film {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getYear() {
         return year;
     }
 
-    public void setYear(String year) {
-        this.year = year;
-    }
-
-    public int getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
-        this.duration = duration;
+    public String getDirector() {
+        return director;
     }
 
-    public String getMusic() {
-        return music;
-    }
-
-    public void setMusic(String music) {
-        this.music = music;
+    public String getWriter() {
+        return writer;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getImage() {
         return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
     //endregion
 }
