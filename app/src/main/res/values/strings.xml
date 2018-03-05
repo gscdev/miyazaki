@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Miyazaki</string>
+
+    <string name="film_year">Año:</string>
+    <string name="film_duration">Duración:</string>
+    <string name="film_director">Dirección:</string>
+    <string name="film_writer">Guión:</string>
+    <string name="minutes">\u0020min</string>
+</resources>
