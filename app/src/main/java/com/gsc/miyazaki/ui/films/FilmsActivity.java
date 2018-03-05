@@ -7,13 +7,15 @@ import android.support.v7.widget.RecyclerView;
 
 import com.gsc.miyazaki.R;
 import com.gsc.miyazaki.model.Film;
+import com.gsc.miyazaki.ui.base.OnBaseItemListener;
+import com.gsc.miyazaki.ui.films.detail.FilmDetailActivity;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class FilmsActivity extends AppCompatActivity implements FilmsView {
+public class FilmsActivity extends AppCompatActivity implements FilmsView, OnBaseItemListener {
 
     private FilmsPresenter presenter;
 
@@ -43,10 +45,22 @@ public class FilmsActivity extends AppCompatActivity implements FilmsView {
         filmsList.setLayoutManager(new GridLayoutManager(this, 2));
     }
 
+    //region OnBaseItemListener
+    @Override
+    public void onItemClick(int position) {
+        presenter.onFilmSelected(position);
+    }
+    //endregion
+
     //region FilmsView
     @Override
     public void setFilms(List<Film> films) {
-        filmsList.setAdapter(new FilmsRecyclerViewAdapter(films));
+        filmsList.setAdapter(new FilmsRecyclerViewAdapter(films, this));
+    }
+
+    @Override
+    public void navigateToFilmDetail(Film film) {
+        FilmDetailActivity.open(this, film);
     }
     //endregion
 }

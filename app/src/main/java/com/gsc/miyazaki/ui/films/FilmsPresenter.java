@@ -9,6 +9,7 @@ public class FilmsPresenter {
 
     private GetFilms getFilms;
     private FilmsView view;
+    private List<Film> films;
 
     public FilmsPresenter() {
         getFilms = new GetFilms();
@@ -29,7 +30,8 @@ public class FilmsPresenter {
     private void loadFilms() {
         getFilms.getData(new GetFilms.Callback() {
             @Override
-            public void onSuccessGetFilms(List<Film> films) {
+            public void onSuccessGetFilms(List<Film> filmList) {
+                films = filmList;
                 view.setFilms(films);
             }
 
@@ -37,5 +39,9 @@ public class FilmsPresenter {
             public void onErrorGetFilms() {
             }
         });
+    }
+
+    public void onFilmSelected(int position) {
+        view.navigateToFilmDetail(films.get(position));
     }
 }

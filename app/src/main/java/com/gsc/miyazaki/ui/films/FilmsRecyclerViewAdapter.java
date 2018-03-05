@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 import com.gsc.miyazaki.R;
 import com.gsc.miyazaki.model.Film;
+import com.gsc.miyazaki.ui.base.OnBaseItemListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,11 +21,13 @@ import butterknife.ButterKnife;
 
 public class FilmsRecyclerViewAdapter extends RecyclerView.Adapter<FilmsRecyclerViewAdapter.ViewHolder> {
 
+    private OnBaseItemListener listener;
     private List<Film> films;
 
 
-    public FilmsRecyclerViewAdapter(List<Film> films) {
+    public FilmsRecyclerViewAdapter(List<Film> films, OnBaseItemListener listener) {
         this.films = films;
+        this.listener = listener;
     }
 
 
@@ -41,6 +43,10 @@ public class FilmsRecyclerViewAdapter extends RecyclerView.Adapter<FilmsRecycler
         Film film = films.get(position);
         Picasso.with(holder.image.getContext()).load(film.getImage()).into(holder.image);
         holder.title.setText(film.getTitle());
+
+        holder.itemView.setOnClickListener(view -> {
+            listener.onItemClick(position);
+        });
     }
 
     @Override

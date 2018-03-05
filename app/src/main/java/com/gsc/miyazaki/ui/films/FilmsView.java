@@ -7,4 +7,6 @@ import java.util.List;
 public interface FilmsView {
 
     void setFilms(List<Film> films);
+
+    void navigateToFilmDetail(Film film);
 }

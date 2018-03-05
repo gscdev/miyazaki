@@ -1,6 +1,9 @@
 package com.gsc.miyazaki.model;
 
-public class Film {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Film implements Parcelable {
 
     private String title;
     private String year;
@@ -20,6 +23,17 @@ public class Film {
         this.description = description;
         this.image = image;
     }
+
+    protected Film(Parcel in) {
+        title = in.readString();
+        year = in.readString();
+        duration = in.readString();
+        director = in.readString();
+        writer = in.readString();
+        description = in.readString();
+        image = in.readString();
+    }
+
 
     //region getters
     public String getTitle() {
@@ -48,6 +62,36 @@ public class Film {
 
     public String getImage() {
         return image;
+    }
+    //endregion
+
+    //region Parcelable
+    public static final Creator<Film> CREATOR = new Creator<Film>() {
+        @Override
+        public Film createFromParcel(Parcel in) {
+            return new Film(in);
+        }
+
+        @Override
+        public Film[] newArray(int size) {
+            return new Film[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(title);
+        parcel.writeString(year);
+        parcel.writeString(duration);
+        parcel.writeString(director);
+        parcel.writeString(writer);
+        parcel.writeString(description);
+        parcel.writeString(image);
     }
     //endregion
 }

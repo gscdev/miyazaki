@@ -2,8 +2,6 @@ package com.gsc.miyazaki.data.response;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 public class FilmResponse {
 
     @SerializedName("title")
@@ -14,9 +12,9 @@ public class FilmResponse {
     public String year;
     @SerializedName("duration")
     public String duration;
-    @SerializedName("director")
+    @SerializedName("direccion")
     public String director;
-    @SerializedName("writer")
+    @SerializedName("guion")
     public String writer;
     @SerializedName("description")
     public String description;
