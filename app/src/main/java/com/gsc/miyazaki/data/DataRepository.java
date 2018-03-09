@@ -8,14 +8,21 @@ import com.gsc.miyazaki.model.Film;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
+
 public class DataRepository {
 
-    private final DataSource dataSource;
-    private final FilmMapper filmMapper;
+    @Inject
+    @Singleton
+    public DataSource dataSource;
+    @Inject
+    public FilmMapper filmMapper;
 
-    public DataRepository() {
-        dataSource = new ApiDataSource();
-        filmMapper = new FilmMapper();
+
+    public DataRepository(ApiDataSource apiDataSource, FilmMapper filmMapper) {
+        this.dataSource = apiDataSource;
+        this.filmMapper = filmMapper;
     }
 
     public List<Film> getFilms() {

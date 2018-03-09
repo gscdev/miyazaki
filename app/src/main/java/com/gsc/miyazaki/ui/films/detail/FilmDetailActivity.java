@@ -10,9 +10,12 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.gsc.miyazaki.MiyazakiApplication;
 import com.gsc.miyazaki.R;
 import com.gsc.miyazaki.model.Film;
 import com.squareup.picasso.Picasso;
+
+import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,7 +24,8 @@ public class FilmDetailActivity extends AppCompatActivity implements FilmDetailV
 
     private static final String ARG_FILM = "art_film";
 
-    private FilmDetailPresenter presenter;
+    @Inject
+    public FilmDetailPresenter presenter;
 
     @BindView(R.id.film_detail_appbar)
     AppBarLayout appbar;
@@ -55,9 +59,10 @@ public class FilmDetailActivity extends AppCompatActivity implements FilmDetailV
         setContentView(R.layout.activity_film_detail);
         ButterKnife.bind(this);
 
+        MiyazakiApplication.getComponent().inject(this);
+
         setupActionBar();
 
-        presenter = new FilmDetailPresenter();
         presenter.setView(this);
         presenter.create(getIntent().getParcelableExtra(ARG_FILM));
     }

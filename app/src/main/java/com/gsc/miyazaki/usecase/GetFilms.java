@@ -8,12 +8,15 @@ import com.gsc.miyazaki.model.Film;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 public class GetFilms {
 
     private DataRepository dataRepository;
 
-    public GetFilms() {
-        dataRepository = new DataRepository();
+    @Inject
+    public GetFilms(DataRepository dataRepository) {
+        this.dataRepository = dataRepository;
     }
 
     public void getData(Callback callback) {

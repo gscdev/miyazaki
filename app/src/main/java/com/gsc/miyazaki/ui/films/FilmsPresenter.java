@@ -11,8 +11,8 @@ public class FilmsPresenter {
     private FilmsView view;
     private List<Film> films;
 
-    public FilmsPresenter() {
-        getFilms = new GetFilms();
+    public FilmsPresenter(GetFilms getFilms) {
+        this.getFilms = getFilms;
     }
 
     public void setView(FilmsView view) {
